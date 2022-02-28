@@ -6,7 +6,7 @@
 body{
     margin: 0px auto;
     width: 100%;
-    background-color: lightgray;
+    background-color: #d3d3d3;
     overflow: hidden;
     height: 100%;
 }
@@ -52,7 +52,7 @@ button{
     height: 45px;
     width: 15%;
     border: 0px;
-    background-color: black;
+    background-color: #000;
     color: #ffff;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
@@ -77,12 +77,69 @@ button{
 .infoWrap h2{
     margin-bottom: 10px;
     font-size: 10px;
-    color: gray;
+    color: #808080;
 }
 
 main {
     width: 100%;
 }
+
+/* Leaflet */
 #map{
     min-height: 430px;
+}
+
+/* Responsive */
+@media only screen and (min-width:576px){
+    .searchBar{
+        width: 50%;
+    }
+    .infoSection{
+        width: 50%;
+    }
+
+}
+@media only screen and (min-width:768px){
+    .searchBar{
+        width: 30%;
+    }
+    .infoSection{
+        width: 30%;
+    }
+}
+@media only screen and (min-width:992px){
+    header{
+        background-size: 100% auto;
+    }
+    .searchBar{
+        width: 40%;
+    }
+    input{
+        width: 90%;
+    }
+    button {
+        width: 10%;
+    }
+    .infoSection{
+        height: 136px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        width: 80%;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    .infoWrapper{
+        height: 86px;
+    }
+    .infoSection div{
+        width: 25%;
+        padding-right: 20px;
+        padding-left: 20px;
+        border-right: 1px solid #d3d3d3;
+        text-align: center;
+    }
+    .isp {
+        border: none;
+    }
 }
