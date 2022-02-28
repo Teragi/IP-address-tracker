@@ -14,7 +14,7 @@ body{
 header{
     height: 225px;
     position: relative;
-    /* z-index: 1000; */
+    z-index: 1000;
     background-image: url(../images/pattern-bg.png);
     background-position: center;
     background-repeat: no-repeat;
