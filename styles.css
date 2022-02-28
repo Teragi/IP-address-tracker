@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0px auto;
+    width: 100vw;
+    max-width: 1920px;
+    background-color: lightgray;
+    overflow: hidden;
+    overflow-y: visible;
+    height: 100vh;
+    min-height: 640px;
+    
+}
+
+header{
+    width: 100%;
+    height: 225px;
+    position: relative;
+    z-index: 1000;
+    background-image: url(../images/pattern-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-y: visible;
+}
+.title{
+    padding: 25px 0px;
+}
+.title h1{
+    color: #ffff;
+    font-size: 20px;
+}
+.searchBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+}
+input{
+    height: 45px;
+    width:85%;
+    border: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 20px;
+    outline: none;
+    font-size: 18px;
+}
+button{
+    height: 45px;
+    width: 15%;
+    border: 0px;
+    background-color: black;
+    color: #ffff;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    outline: none;
+}
+.infoSection{
+    width: 80%;
+    background-color: #ffff;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    border-radius: 10px;
+}
+.infoWrap{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.infoWrap h2{
+    margin-bottom: 10px;
+    font-size: 10px;
+    color: gray;
+}
+
+main {
+    width: 100%;
+}
+#map{
+    min-height: 430px;
+}
